@@ -72,5 +72,19 @@ The code for the Menu Screen is located in `MenuScreen.js`. The Menu Screen cons
 * #### Library Screens
     The library workflow consists of three screens, to select the Event, Mission and Sortie respectively. If the Library Screens are accessed in the Resume workflow, then the Mission and Sortie Library screens will have an option to add a new Mission and Sortie respectively in addtion to the lists.
     ![Lib](images/library.png)
+* #### Sub Views
+    To improve modularity, some sub views are provided in the subvies folder. These include the `StickyFooter.js` which contains the code for the footer buttons on most screens, `Grid.js`, which contains the code for the clickable grid on the observation screens, and the graphs for the summary page.
     
-The code for the Android App and the iOS apps are in the folders named `android` and `ios` respectively. To run the code on your local machine, follow the instructions given below. (Watchman and NPM should be installed) 
+## Development
+To develop on your local machine, follow the instructions given below. (Watchman and NPM should be installed):
+1. Clone the code to your system.
+1. Run the following command in a Terminal:
+    `npm install -g react-native-cli`
+1. To run the app in an iOS simulator (only if XCode is installed), run
+    `react-native run-ios`
+1. To run the app in an android simulator (only if Android Studio is installed, or an Android app is connected), run
+    `react-native run-android`
+
+For more details on how to develop with React Native, [React Native](http://facebook.github.io/react-native/)
+
+The code for the Android App and the iOS apps are in the folders named `android` and `ios` respectively. 
